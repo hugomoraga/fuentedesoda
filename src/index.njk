@@ -7,29 +7,39 @@ layout: layout.njk
 
 <section>
 
-  <i class="fa-thin fa-baby-carriage"></i>
+<div class="relative">
+    <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+        <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+            <i class="fas fa-angle-left fa-4x"></i>
+        </li>
+        <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+            <i class="fas fa-angle-right fa-4x"></i>          
+        </li>
+    </ul>
+    <div class="my-slider shadow">
+        <div>
+            <img src="{{ '/assets/img/slider1.png' | url }}" alt="" />
+        </div>
+        <div>
+          <img src="{{ '/assets/img/slider2.jpg' | url }}"alt=""/>
+        </div>
+        <div>
+          <img src="{{ '/assets/img/slider3.jpg' | url }}" alt=""/>
+        </div>
+      </div>
 
-  <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
-    <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
-        <i class="fas fa-angle-left fa-4x"></i>
-    </li>
-    <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
-        <i class="fas fa-angle-right fa-4x"></i>          
-    </li>
-</ul>
+</div>
 
-  <div class="relative my-slider shadow">
-    <div>
-        <img src="{{ '/assets/img/slider1.png' | url }}" alt="" />
-    </div>
-    <div>
-      <img src="{{ '/assets/img/slider2.jpg' | url }}"alt=""/>
-    </div>
-    <div>
-      <img src="{{ '/assets/img/slider3.jpg' | url }}" alt=""/>
-    </div>
-  </div>
+
+ 
 </section>
+
+{% for page in collections.pages %}
+  
+<a href="{{page.url | url }}">{{page.data.title}}</a>
+
+
+{% endfor %}
 
 <style>
 
@@ -58,9 +68,9 @@ layout: layout.njk
         padding: 0;
         list-style: none;
         position: absolute;
-        left: 10%;
-        width: 80%;
-        top: 50%;
+        left: 5%;
+        width: 90%;
+        top: 45%;
         transform: translatey(-50%);
         display: flex;
         align-items: center;

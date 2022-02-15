@@ -4,6 +4,8 @@ module.exports = (config) => {
   config.addPlugin(syntaxHighlight);
   config.addPassthroughCopy("img");
   config.addPassthroughCopy("css");
+  config.addPassthroughCopy("js");
+
   config.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!-- excerpt -->",
