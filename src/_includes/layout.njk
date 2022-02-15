@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="{{ '/assets/main.bundle.css' | url }}">
 
     <script src="{{ '/assets/main.bundle.js' | url }}" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
     <title>{{ title }}</title>
 
 </head>
 <body class="flex flex-col min-h-screen">
-<main class="container flex-grow py-8">
+<main class="container flex-grow">
 {{ content | safe }}
 </main>    
 </body>

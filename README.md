@@ -16,11 +16,8 @@ Sistema para una fuente de soda, realizado con Arquitectura Jamstack :
 
 ### Prerequisites
 
-The things you'll need in order to use the app and how to install them
-
-```
-Give examples
-```
+GIT
+NODE.JS
 
 ### How to use
 

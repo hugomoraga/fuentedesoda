@@ -1,0 +1,15 @@
+{ "menuItems" : [
+    {
+      "menu_item" : "Inicio"
+    },
+    {
+      "menu_item" : "La Carta"
+    },
+    {
+      "menu_item" : "Nuestro Equipo"
+    },
+    {
+      "menu_item" : "Contactos"
+    }
+  ]
+}

@@ -19,6 +19,6 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "main.bundle.css",
-    }),
-  ],
+    })
+  ]
 };
