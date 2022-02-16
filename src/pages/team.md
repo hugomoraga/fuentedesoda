@@ -1,3 +1,4 @@
 ---
-title: El equipo
+title: Nuestro equipo
+order: 1
 ---

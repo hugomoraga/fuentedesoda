@@ -23,7 +23,9 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "src/assets/js/", to: "js/" }
+        { from: "src/assets/js/", to: "js/" },
+        { from: "node_modules/tiny-slider/dist/tiny-slider.js", to: "js/lib/" }
+
       ],
     }),
   ]

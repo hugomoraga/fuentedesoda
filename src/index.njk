@@ -5,9 +5,8 @@ layout: layout.njk
 
 {% include 'header.njk' %}
 
-<section>
 
-<div class="relative">
+<section id="home-slider" class="relative">
     <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
         <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
             <i class="fas fa-angle-left fa-4x"></i>
@@ -16,7 +15,7 @@ layout: layout.njk
             <i class="fas fa-angle-right fa-4x"></i>          
         </li>
     </ul>
-    <div class="my-slider shadow">
+    <div class="home-slider-container">
         <div>
             <img src="{{ '/assets/img/slider1.png' | url }}" alt="" />
         </div>
@@ -26,24 +25,16 @@ layout: layout.njk
         <div>
           <img src="{{ '/assets/img/slider3.jpg' | url }}" alt=""/>
         </div>
-      </div>
+    </div>
 
-</div>
-
-
- 
 </section>
 
-{% for page in collections.pages %}
-  
-<a href="{{page.url | url }}">{{page.data.title}}</a>
 
 
-{% endfor %}
 
 <style>
 
-    .my-slider img {
+    .home-slider-container img {
         max-height: 800px;
         object-fit: cover;
         width: 100%;
@@ -51,9 +42,7 @@ layout: layout.njk
     }
 
 
-    .slider-container {
-        padding: 0.5rem;
-        margin: 0.5rem auto 0 auto;
+  #home-slider {
         overflow: hidden;
         position:relative;
       

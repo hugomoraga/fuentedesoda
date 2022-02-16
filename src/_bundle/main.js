@@ -1,8 +1,12 @@
 import "./main.pcss";
 import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
 
-  var slider = tns({
-    container: '.my-slider',
+let homeSlider = document.getElementById('home-slider');
+if (typeof(homeSlider) != 'undefined' && homeSlider !=null)
+{
+
+let slider = tns({
+    container: '.home-slider-container',
     items: 1,
     slideBy: 'page',
     navPosition: 'botton',
@@ -14,3 +18,6 @@ import { tns } from "../../node_modules/tiny-slider/src/tiny-slider";
 
 
   });
+
+}
+
