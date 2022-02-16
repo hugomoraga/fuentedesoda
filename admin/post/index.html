@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fuentedesoda/assets/main.bundle.css">
+
+    <script src="/fuentedesoda/assets/main.bundle.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+    <title>Dashboard Admin</title>
+
+</head>
+<body class="flex flex-col min-h-screen bg-slate-200">
+<main class="container flex-grow">
+<div class="shadow px-8 py-8 bg-lime-100">
+
+<h2 class="py-3 uppercase font-bold text-center">Agregar Producto a la Carta</h2>
+
+<div class="flex justify-center">
+
+
+<form class="w-full max-w-lg shadow-lg px-3 py-3 bg-gray-200	">
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        Nombre
+      </label>
+      <input class="appearance-none block w-full bg-gray-100 text-gray-700 border border-blue-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Hamburguesa Seitan del Huerto ">
+    </div>
+    <div class="w-full px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+        Descripcion
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-blue-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Proteina Vegana con vegetales y salsa de aquafaba... ...">
+    </div>
+  </div>
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+        Ingredientes
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-blue-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="pan, seitan, lechucha, tomate...">
+    </div>
+
+  </div>
+
+</form>
+
+</div>
+
+<script>
+
+const { createClient } = supabase
+supabase = createClient("https://mwouximqkpguzanqswfi.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0Mzc1ODk0MywiZXhwIjoxOTU5MzM0OTQzfQ.LdF6-P91FlknXc06maRQ7tkI3SsjgXJ5wplOaA6U2bI")
+
+const form = document.querySelector("#form-registro")
+form.addEventListener('submit', async (event) => {
+    event.preventDefault()
+
+    const formInputs = form.querySelectorAll('input, select, textarea')
+
+    let submision = {}
+
+    formInputs.forEach(element => {
+        const { value, name } = element
+        if (value) {
+            submision[name] = value
+        }
+    })
+
+
+
+    const { error, data } = await supabase.from('propiedades').insert([submision])
+
+    const div = document.getElementById("mensajes");
+
+    if (error) {
+        div.innerHTML = 'Error en el Registro intente nuevamente'
+    } else {
+        div.innerHTML = 'registro realizado'
+    }
+
+
+})
+
+</script>
+
+</div>
+<script src="/fuentedesoda/assets/js/auth.js"></script>
+
+
+</main>    
+</body>
+</html>

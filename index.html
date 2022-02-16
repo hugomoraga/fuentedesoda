@@ -18,27 +18,33 @@
 <body class="flex flex-col min-h-screen bg-slate-200">
 <main class="container flex-grow">
 
-
-
-<ul class="nav-menu" id="primary-menu">
-  
-</ul> 
-
 <nav class="container flex justify-around py-8 mx-auto bg-teal-600">
   <div>
-    <h3 class="text-2xl font-medium text-blue-500">LOGO</h3>
+    <a href="/fuentedesoda/" class="uppecase"> LOGO </a>
   </div>
   <div class="space-x-8 text-white text-lg uppercase font-bold ">
-    <a href="">Inicio</a>
-    <a href="">Nuestro Equipo</a>
-    <a href="">La Carta</a>
-    <a href="">Contactanos</a>
+ 
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/team/">Nuestro equipo</a>
+
+
+
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/letter/">La Carta</a>
+
+
+
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/contact/">Contactanos</a>
+
+
+
+
   </div>
 </nav>
 
-<section>
 
-<div class="relative">
+<section id="home-slider" class="relative">
     <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
         <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
             <i class="fas fa-angle-left fa-4x"></i>
@@ -47,7 +53,7 @@
             <i class="fas fa-angle-right fa-4x"></i>          
         </li>
     </ul>
-    <div class="my-slider shadow">
+    <div class="home-slider-container">
         <div>
             <img src="/fuentedesoda/assets/img/slider1.png" alt="" />
         </div>
@@ -57,34 +63,16 @@
         <div>
           <img src="/fuentedesoda/assets/img/slider3.jpg" alt=""/>
         </div>
-      </div>
+    </div>
 
-</div>
-
-
- 
 </section>
-
-
-  
-<a href="/fuentedesoda/pages/about/">Acerca de Nosotros</a>
-
-
-
-  
-<a href="/fuentedesoda/pages/team/">El equipo</a>
-
-
-
-  
-<a href="/fuentedesoda/pages/letter/">La Carta</a>
 
 
 
 
 <style>
 
-    .my-slider img {
+    .home-slider-container img {
         max-height: 800px;
         object-fit: cover;
         width: 100%;
@@ -92,9 +80,7 @@
     }
 
 
-    .slider-container {
-        padding: 0.5rem;
-        margin: 0.5rem auto 0 auto;
+  #home-slider {
         overflow: hidden;
         position:relative;
       
