@@ -1,4 +1,5 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const eleventyVue = require("@11ty/eleventy-plugin-vue"); // import the plugin
 
 module.exports = (config) => {
 
@@ -6,7 +7,7 @@ module.exports = (config) => {
     let vals = [...values]
     return vals.sort((a, b) => Math.sign(a.data.order - b.data.order))
   }
-
+  config.addPlugin(eleventyVue);
   config.addPlugin(syntaxHighlight);
   config.addPassthroughCopy("img");
   config.addPassthroughCopy("css");

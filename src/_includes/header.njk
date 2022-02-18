@@ -1,8 +1,9 @@
-<nav class="container flex justify-around py-8 mx-auto bg-teal-600">
+<nav class="container flex justify-around  mx-auto bg-teal-600 py-2">
   <div>
-    <a href="{{ '/' | url }}" class="uppecase"> LOGO </a>
+    <a href="{{ '/' | url }}">          <img style="width:100px" src="{{ '/assets/img/logo2.png' | url }}" alt=""/>
+ </a>
   </div>
-  <div class="space-x-8 text-white text-lg uppercase font-bold ">
+  <div class="space-x-8 text-white text-lg uppercase font-bold py-8 ">
  {% for page in collections.pages | sortByOrder %}
   
 <a class="hover:text-amber-400" href="{{page.url | url }}">{{page.data.title}}</a>

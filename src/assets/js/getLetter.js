@@ -16,19 +16,19 @@ async function loadcarta() {
 
   mostrarproductos.map(function (producto) {
     let li = document.createElement("li");
-    li.className = "px-8 py-8 rounded overflow-hidden shadow-lg bg-slate-50";
+    li.className = "px-8 py-8 rounded overflow-hidden shadow-lg bg-slate-50 producto";
 
-    let nombre = document.createElement("h5");
+    let nombre = document.createElement("h4");
     let descripcion = document.createElement("p");
     let ingredientes = document.createElement("p");
     let precio = document.createElement("p");
     let a = document.createElement("a");
     let link = document.createTextNode("Ver Producto");
     let img = document.createElement("img");
-    img.src = "https://ncjymzvhdpnxtbalacvu.supabase.in/storage/v1/object/sign/productos/65481445_m-e1525800372307.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9kdWN0b3MvNjU0ODE0NDVfbS1lMTUyNTgwMDM3MjMwNy5qcGciLCJpYXQiOjE2NDUxODA4NDUsImV4cCI6MTk2MDU0MDg0NX0.2-MXv9_qj9gininiWUHjIdyL-vOUFyWttPsldjnKotk";
+    img.src = producto.imagen;
 
     a.appendChild(link); 
-    a.href=`/corredor/producto`;
+    a.href=`/fuentedesoda/pages/carta/producto`;
 
 
     nombre.innerHTML = `${producto.nombre} <span class="badge rounded-pill fs-6 bg-primary">${producto.precio}</span>`;
