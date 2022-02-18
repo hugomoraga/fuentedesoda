@@ -1,8 +1,11 @@
-var SUPABASE_URL = 'https://ncjymzvhdpnxtbalacvu.supabase.co'
-var SUPABASE_KEY =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5janltenZoZHBueHRiYWxhY3Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ4OTg0MjcsImV4cCI6MTk2MDQ3NDQyN30.H5vtVB1lI3Q4C7rvs8WrsdDnBENSldAmh3UA95avm7I'
+const { createClient } = supabase;
 
-var supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY)
+supabase = createClient(
+  "https://ncjymzvhdpnxtbalacvu.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5janltenZoZHBueHRiYWxhY3Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ4OTg0MjcsImV4cCI6MTk2MDQ3NDQyN30.H5vtVB1lI3Q4C7rvs8WrsdDnBENSldAmh3UA95avm7I"
+);
+
+
 window.userToken = null
 
 document.addEventListener('DOMContentLoaded', function (event) {
@@ -19,20 +22,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   logoutButton.onclick = logoutSubmitted.bind(logoutButton)
 })
 
-const signUpSubmitted = (event) => {
-  event.preventDefault()
-  const email = event.target[0].value
-  const password = event.target[1].value
 
-  supabase.auth
-    .signUp({ email, password })
-    .then((response) => {
-      response.error ? alert(response.error.message) : setToken(response)
-    })
-    .catch((err) => {
-      alert(err)
-    })
-}
 
 const logInSubmitted = (event) => {
   event.preventDefault()

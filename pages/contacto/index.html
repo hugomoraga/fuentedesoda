@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fuentedesoda/assets/main.bundle.css">
+    <style></style>
+
+    <script src="/fuentedesoda/assets/main.bundle.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+
+
+    <title>Contacto</title>
+
+</head>
+<body class="flex flex-col min-h-screen bg-slate-200">
+<main class="container flex-grow">
+
+<div class="shadow bg-lime-100" style="min-height:1000px;" >
+<nav class="container flex justify-around  mx-auto bg-teal-600 py-2">
+  <div>
+    <a href="/fuentedesoda/">          <img style="width:100px" src="/fuentedesoda/assets/img/logo2.png" alt=""/>
+ </a>
+  </div>
+  <div class="space-x-8 text-white text-lg uppercase font-bold py-8 ">
+ 
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/equipo/">Nuestro equipo</a>
+
+
+
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/carta/">La Carta</a>
+
+
+
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/historia/">Historia</a>
+
+
+
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/sucursales/">Sucursales</a>
+
+
+
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/contacto/">Contacto</a>
+
+
+
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/carta/producto/"></a>
+
+
+
+  
+<a class="hover:text-amber-400" href="/fuentedesoda/pages/login/">Ingresar</a>
+
+
+
+
+  </div>
+</nav>
+
+<div class="p-10 flex justify-center">
+
+<form class="bg-slate-50 p-10 shadow-lg rounded-lg w-1/2 ">
+  <div class="relative z-0 mb-6 w-full group">
+      <input type="email" name="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+      <label for="floating_email" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo Electronico</label>
+  </div>
+ 
+ 
+  <div class="grid xl:grid-cols-2 xl:gap-6">
+    <div class="relative z-0 mb-6 w-full group">
+        <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_first_name" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
+    </div>
+    <div class="relative z-0 mb-6 w-full group">
+        <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_last_name" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Apellido</label>
+    </div>
+  </div>
+  <div class="grid xl:grid-cols-2 xl:gap-6">
+    <div class="relative z-0 mb-6 w-full group">
+        <input type="tel" pattern="[0-9]{4}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_phone" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Numero Telefonico (987654321)</label>
+    </div>
+    <div class="relative z-0 mb-6 w-full group">
+       
+
+      <div class="relative">
+        <select class="text-gray-500 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer" id="motivo">
+          <option>Sugerencia</option>
+          <option>Reclamo</option>
+          <option>Felicitaciones</option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+        </div>
+      </div>
+             <label class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="motivo">
+       Motivo
+      </label>
+
+    </div>
+
+
+  </div>
+
+      <div class="relative z-0 mb-6 w-full group">
+        <input rows="3" type="text" name="floating_message" id="floating_message" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_message" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mensaje</label>
+    </div>
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enviar</button>
+</form>
+
+</div>
+
+
+
+</div>
+
+</main>    
+</body>
+</html>
