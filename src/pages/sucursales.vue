@@ -1,7 +1,7 @@
 <template>
     <article>
             <div class="container mx-auto mt-12 mb-40 space-y-12">
-                <div class="m-10 flex w-screen bg-white shadow-lg rounded-lg overflow-hidden" v-for="(card, index) in cards" :key="index" style="margin: 20px;">
+                <div class="m-10 flex  bg-white shadow-lg rounded-lg overflow-hidden" v-for="(card, index) in cards" :key="index" style="margin: 20px;">
                     <img class="w-1/3 bg-cover" :src="card.img" style="max-width:500px;"/>
                     <div class="w-2/3 p-10">
                         <h3 class="font-semibold text-lg leading-tight truncate py-3">{{ card.title }}</h3>
