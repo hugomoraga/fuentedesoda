@@ -30,12 +30,12 @@ export default {
       {
         title: "Sucursal Santiago",
         excerpt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining",
-        link: "/fuentedesoda/pages/sucursales/santiago/",
+        link: "/fuentedesoda/sucursales/santiago/",
         img: "https://ventuscorp.pe/wp-content/uploads/2019/01/VENTUS-CORP-02-Implementa-una-fuente-de-soda-con-las-mejores-maquinas.jpg"
       }, {
         title: "Sucursal Villarrica",
         excerpt: "in Feburary 2019, the U.S. Secretary of the Interior signed Secretarial Order 3362, a framework designed to improve habitat quality and protect crucial migration corridors for several species of wildlife including pronghorn, elk, and mule deer.",
-        link: "/fuentedesoda/pages/sucursales/villarrica/",
+        link: "/fuentedesoda/sucursales/villarrica/",
 
         img: "https://gazzettahedone.mx/wp-content/uploads/2019/03/Fuente-de-Sodas.jpg"
       }
