@@ -1,14 +1,11 @@
 ---
 layout: layout.njk
 ---
-{% include 'header.njk' %}
 
-<div class="shadow px-8 py-8 bg-lime-100">
+<div class="shadow bg-lime-100 h-screen	">
+{% include 'header.njk' %}
 
 {{ content | safe }}
 
-<footer>
-<p>Publicado en: {{ page.date.toDateString() }}</p>
-</footer>
 
 </div>
