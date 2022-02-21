@@ -3,9 +3,6 @@ layout: layout.njk
 ---
 
 <div class="shadow bg-lime-100" style="min-height:1000px;" >
-{% include 'header.njk' %}
-
-{{ content | safe }}
-
-
+    {% include 'header.njk' %}
+    {{ content | safe }}
 </div>
