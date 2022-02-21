@@ -10,66 +10,51 @@
     <script src="/fuentedesoda/assets/main.bundle.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-
-        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
 
 
     <title>Historia</title>
 
 </head>
-<body class="flex flex-col min-h-screen bg-slate-200">
-<main class="container flex-grow">
-
+    <body class="flex flex-col min-h-screen bg-slate-200">
+        <main class="container flex-grow md:mx-auto">
+            
 <div class="shadow bg-lime-100" style="min-height:1000px;" >
-<nav class="container flex justify-around  mx-auto bg-teal-600 py-2">
+    <nav class="container flex justify-around  mx-auto bg-teal-600 py-2   items-center mx-auto">
   <div>
-    <a href="/fuentedesoda/">          <img style="width:100px" src="/fuentedesoda/assets/img/logo2.png" alt=""/>
- </a>
+    <a class="flex" href="/fuentedesoda/">
+      <img class="" style="width:100px; padding-right:20px;" src="/fuentedesoda/assets/img/logo2.png" alt=""/>
+    </a>
   </div>
-  <div class="space-x-8 text-white text-lg uppercase font-bold py-8 ">
- 
-  
-<a class="hover:text-amber-400" href="/fuentedesoda/pages/equipo/">Nuestro equipo</a>
-
-
-
-  
-<a class="hover:text-amber-400" href="/fuentedesoda/pages/carta/">La Carta</a>
-
-
-
-  
-<a class="hover:text-amber-400" href="/fuentedesoda/pages/historia/">Historia</a>
-
-
-
-  
-<a class="hover:text-amber-400" href="/fuentedesoda/pages/sucursales/">Sucursales</a>
-
-
-
-  
-<a class="hover:text-amber-400" href="/fuentedesoda/pages/contacto/">Contacto</a>
-
-
-
-  
-<a class="hover:text-amber-400" href="/fuentedesoda/pages/carta/producto/"></a>
-
-
-
-  
-<a class="hover:text-amber-400" href="/fuentedesoda/pages/login/">Ingresar</a>
-
-
-
-
+  <div class="space-x-8 text-white text-lg uppercase font-bold py-8 hidden w-full md:block md:w-auto" id="mobile-menu"">
+    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+    
+      <li><a class="hover:text-amber-400 text-lg	" href="/fuentedesoda/pages/equipo/">Nuestro equipo</a></li>
+    
+      <li><a class="hover:text-amber-400 text-lg	" href="/fuentedesoda/pages/carta/">La Carta</a></li>
+    
+      <li><a class="hover:text-amber-400 text-lg	" href="/fuentedesoda/pages/historia/">Historia</a></li>
+    
+      <li><a class="hover:text-amber-400 text-lg	" href="/fuentedesoda/pages/sucursales/">Sucursales</a></li>
+    
+      <li><a class="hover:text-amber-400 text-lg	" href="/fuentedesoda/pages/contacto/">Contacto</a></li>
+    
+      <li><a class="hover:text-amber-400 text-lg	" href="/fuentedesoda/pages/carta/producto/"></a></li>
+    
+      <li><a class="hover:text-amber-400 text-lg	" href="/fuentedesoda/pages/login/">Ingresar</a></li>
+    
+    </ul>
   </div>
+  <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-lg text-gray-100 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false" style="margin-right:20px;">
+    <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
 </nav>
-
-
+    
   <div class="container mx-auto mt-12 mb-40 space-y-12">
                 <div class="m-10 flex w-screen bg-white shadow-lg rounded-lg overflow-hidden" style="margin: 20px;">
                     <img class="w-1/3 bg-cover" src="https://ventuscorp.pe/wp-content/uploads/2019/01/VENTUS-CORP-02-Implementa-una-fuente-de-soda-con-las-mejores-maquinas.jpg" style="max-width:500px;"/>
@@ -84,10 +69,10 @@
                 </div>
             </div>
         
-
-
 </div>
 
-</main>    
-</body>
+        </main>    
+    <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+
+    </body>
 </html>
